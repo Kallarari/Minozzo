@@ -1,14 +1,10 @@
-import * as React from 'react';
-import { styled, createTheme } from '@mui/system';
+import { createTheme } from '@mui/system';
+import { palette } from './palette';
 
 export const customTheme = createTheme({
-  palette: {
-    primary: {
-      main: '#1976d2',
-      contrastText: 'white',
-    },
-  },
+  palette,
 });
+
 {/* 
 
 **MATERIAL UI STYLES EXAMPLE USING THE THEME***

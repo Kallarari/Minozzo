@@ -7,12 +7,14 @@ export const Title = MUIstyled(Typography)({
   fontFamily: "monospace",
   fontWeight: 700,
   letterSpacing: ".3rem",
-  color: "inherit",
+  color: "#fc7263",
   textDecoration: "none",
+  fontSize: "30px",
+  alignSelf:"center",
   ["media (max-width: 600px)"]: { display: "none" },
 });
  
 export const Container = styled.div`
-    display: flex,
-    
+  display: flex;
+  justify-content: space-around;
 `;
