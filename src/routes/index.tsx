@@ -8,6 +8,7 @@ const RoutesComponent: React.FC = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/building-page" element={<BuildingPage />} />
+      <Route path="/404" element={<BuildingPage />} />
     </Routes>
   );
 };

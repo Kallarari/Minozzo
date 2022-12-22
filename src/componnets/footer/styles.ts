@@ -9,3 +9,9 @@ export const Container = styled.div`
   justify-content: center;
   padding-top: 15px;
 `;
+
+export const SocialMediaContainer = styled.div`
+  width: 175px;
+  display: flex;
+  justify-content: space-between;
+`;

@@ -1,33 +1,37 @@
 import { Avatar } from "@mui/material";
 import React from "react";
-import AssignmentIcon from "@mui/icons-material/Assignment";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import { Container } from "./styles";
+import { Container, SocialMediaContainer } from "./styles";
 
 const Footer: React.FC = () => {
   const socialMedia = [
     {
-      link: "Google.com",
-      icon: <AssignmentIcon />,
+      link: "https://www.instagram.com/joaovitorminosso",
+      icon: <InstagramIcon />,
     },
     {
-      link: "Google.com",
-      icon: <AssignmentIcon />,
+      link: "https://www.facebook.com/joaovitor.minosso/",
+      icon: <FacebookIcon />,
     },
     {
-      link: "Google.com",
-      icon: <AssignmentIcon />,
+      link: "https://www.linkedin.com/in/jo%C3%A3o-vitor-minosso-835737197/",
+      icon: <LinkedInIcon />,
     },
   ];
   return (
     <Container>
-      <>
-      {socialMedia.map((item) => (
-        <Avatar key={item.link} variant="rounded">
-          {item.icon}
-        </Avatar>
-      ))}
-      </>
+      <SocialMediaContainer>
+        {socialMedia.map((item) => (
+          <a href={item.link} target="_blank" rel="noreferrer">
+            <Avatar key={item.link} variant="rounded">
+              {item.icon}
+            </Avatar>
+          </a>
+        ))}
+      </SocialMediaContainer>
     </Container>
   );
 };
