@@ -1,3 +1,4 @@
+import Card from 'componnets/card';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
     <div>
       <Link to="/building-page">
       <h1 >HOME</h1>
-      <img alt="front-end background" src='/fundo site.png' />
+      <Card />
       </Link>
     </div>
   );
