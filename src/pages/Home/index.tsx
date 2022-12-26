@@ -11,8 +11,9 @@ const Home: React.FC = () => {
     <div>
       <Link to="/building-page">
       <h1 >HOME</h1>
-      <Card />
+      
       </Link>
+      <Card />
     </div>
   );
 }
